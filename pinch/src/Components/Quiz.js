@@ -7,11 +7,6 @@ const Quiz = (props) => {
    const [disabled, setDisabled] = useState(false);
    const [clicked, setclicked] = useState(null);
 
-   const msg = ()=>{
-      alert('Already Attempted this');
-      console.log('Button Clicked');
-   }
-
    useEffect(() => {
      console.log('Selected Ans: ',clicked);
      if(clicked==ans){
@@ -39,7 +34,7 @@ const Quiz = (props) => {
 
        </div>
        {disabled && <>
-       Correct Ans: {ans} 
+         Correct Ans: {ans} 
        </>}
 
        

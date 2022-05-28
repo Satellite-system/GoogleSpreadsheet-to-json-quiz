@@ -61,7 +61,7 @@ function App() {
   
   return (
     <div className="App">
-      <h2>Your Score: {score} </h2>
+      <h2 className='app__score'>Your Score: {score} </h2>
 
       {record.length>=10 ? renderQuiz(): <Spinner />}
       {randomRecord.length>=10 ? randomRecord.map((item)=>{
