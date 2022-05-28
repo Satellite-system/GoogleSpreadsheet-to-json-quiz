@@ -73,7 +73,7 @@ function App() {
       );
     }) : <Spinner/>}
 
-    <button onClick={finish} >Finish The Quiz</button>
+    <button onClick={finish} className='app__finishBtn'>Finish The Quiz</button>
 
       
     </div>
